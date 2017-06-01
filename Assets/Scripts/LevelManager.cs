@@ -5,6 +5,7 @@ public class LevelManager : MonoBehaviour {
 
 	public void LoadLevel(string name){
 		Debug.Log ("New Level load: " + name);
+		Time.timeScale = 1.0f;
 		Application.LoadLevel (name);
 	}
 
